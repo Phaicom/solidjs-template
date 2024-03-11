@@ -1,0 +1,9 @@
+html,
+body,
+#root {
+  --uno: bg-base font-sans p-0 m-0 text-white h-[100vh];
+}
+
+* {
+  --uno: min-h-0
+}
