@@ -1,34 +1,50 @@
-## Usage
+# Opinionated SolidJS Template
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+## Features
+- [SolidJS](https://solidjs.com/), [Vite](https://vitejs.dev/), [pnpm](https://pnpm.io/) for fast development
+- [UnoCSS](https://unocss.com/) for utility-first CSS
+- [TypeScript](https://www.typescriptlang.org/) for type safety
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+## Script
 
+install packages with pnpm
 ```bash
-$ npm install # or pnpm install or yarn install
+$ pnpm install
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+run the development server
+```bash
+$ pnpm run dev
+```
 
-## Available Scripts
+build the project
+```bash
+$ pnpm run build
+```
 
-In the project directory, you can run:
+serve the built project
+```bash
+$ pnpm run serve
+```
 
-### `npm run dev` or `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+lint and format the project
+```bash
+$ pnpm run lint
+$ pnpm run format
+```
 
 ## Deployment
 
 You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+
+## TODO
+- [ ] Add Vitest framework for unit testing
+- [ ] Add E2E testing framework (TBD)
+- [ ] Add Docker production build
+- [ ] Add I18n support
+- [ ] Add PWA support (TBD)
+- [ ] Add Components auto-import
+- [ ] Add File-based routing
+- [ ] Add Layout system
+- [ ] Add Ci/CD pipeline
+- [ ] Add Pre-commit hooks
